@@ -1,4 +1,4 @@
-local template = require('template')
+local template = require('init')
 local module = require('template.module')
 
 describe('greet', function()

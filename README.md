@@ -1,43 +1,7 @@
-<div align = "center">
-
-<h1><a href="https://github.com/2kabhishek/template.nvim">template.nvim</a></h1>
-
-<a href="https://github.com/2KAbhishek/template.nvim/blob/main/LICENSE">
-<img alt="License" src="https://img.shields.io/github/license/2kabhishek/template.nvim?style=flat&color=eee&label="> </a>
-
-<a href="https://github.com/2KAbhishek/template.nvim/graphs/contributors">
-<img alt="People" src="https://img.shields.io/github/contributors/2kabhishek/template.nvim?style=flat&color=ffaaf2&label=People"> </a>
-
-<a href="https://github.com/2KAbhishek/template.nvim/stargazers">
-<img alt="Stars" src="https://img.shields.io/github/stars/2kabhishek/template.nvim?style=flat&color=98c379&label=Stars"></a>
-
-<a href="https://github.com/2KAbhishek/template.nvim/network/members">
-<img alt="Forks" src="https://img.shields.io/github/forks/2kabhishek/template.nvim?style=flat&color=66a8e0&label=Forks"> </a>
-
-<a href="https://github.com/2KAbhishek/template.nvim/watchers">
-<img alt="Watches" src="https://img.shields.io/github/watchers/2kabhishek/template.nvim?style=flat&color=f5d08b&label=Watches"> </a>
-
-<a href="https://github.com/2KAbhishek/template.nvim/pulse">
-<img alt="Last Updated" src="https://img.shields.io/github/last-commit/2kabhishek/template.nvim?style=flat&color=e06c75&label="> </a>
-
-<h3>Ready to go Neovim template 🏗️✈️</h3>
-
-<figure>
-  <img src="doc/images/screenshot.png" alt="template.nvim in action">
-  <br/>
-  <figcaption>template.nvim in action</figcaption>
-</figure>
-
-</div>
-
 template.nvim is a neovim plugin that allows neovim users to `<action>`.
 
 ## ✨ Features
 
-- Includes a ready to go neovim plugin template
-- Comes with a lint and test CI action
-- Includes a Github action to auto generate vimdocs
-- Comes with a ready to go README template
 - Works with [mkrepo](https://github.com/2kabhishek/mkrepo)
 
 ## ⚡ Setup
@@ -60,23 +24,21 @@ template.nvim is a neovim plugin that allows neovim users to `<action>`.
 },
 ```
 
-## 🚀 Usage
+1. Add the code required for your plugin,
 
-1. Fork the `template.nvim` repo
-2. Update the plugin name, file names etc, change `template` to `your-plugin-name`
-3. Add the code required for your plugin,
-   - Code entrypoint is [template.lua](./lua/template.lua)
    - Add user configs to [config.lua](./lua/template/config.lua)
    - For adding commands and keybindngs use [commands.lua](./lua/template/commands.lua)
    - Separate plugin logic into modules under [modules](./lua/template/) dir
-4. Add test code to the [tests](./tests/) directory
-5. Update the README
-6. Tweak the [docs action](./.github/workflows/docs.yml) file to reflect your plugin name, commit email and username
+
+1. Add test code to the [tests](./tests/) directory
+
+1. Tweak the [docs action](./.github/workflows/docs.yml) file to reflect your plugin name, commit email and username
+
    - Generating vimdocs needs read and write access to actions (repo settings > actions > general > workflow permissions)
 
 ### Configuration
 
-template.nvim can be configured using the following options:
+hass.nvim can be configured using the following options:
 
 ```lua
 template.setup({
@@ -86,15 +48,15 @@ template.setup({
 
 ### Commands
 
-`template.nvim` adds the following commands:
+`hass.nvim` adds the following commands:
 
-- `TemplateHello`: Shows a hello message with the confugred name.
+- `HassToken`: Enter Long-Lived access token.
 
 ### Keybindings
 
 It is recommended to use:
 
-- `<leader>th,` for `TemplateHello`
+- `<leader>hta,` for `HassTestAutomation`
 
 > NOTE: By default there are no configured keybindings.
 
@@ -105,25 +67,6 @@ Run `:help template.txt` for more details.
 ## 🏗️ What's Next
 
 Planning to add `<feature/module>`.
-
-### ✅ To-Do
-
-- [x] Setup repo
-- [ ] Think real hard
-- [ ] Start typing
-
-## ⛅ Behind The Code
-
-### 🌈 Inspiration
-
-template.nvim was inspired by [nvim-plugin-template](https://github.com/ellisonleao/nvim-plugin-template), I added some changes on top to make setting up a new plugin faster.
-
-### 💡 Challenges/Learnings
-
-- The main challenges were `<issue/difficulty>`
-- I learned about `<learning/accomplishment>`
-
-### 🧰 Tooling
 
 - [dots2k](https://github.com/2kabhishek/dots2k) — Dev Environment
 - [nvim2k](https://github.com/2kabhishek/nvim2k) — Personalized Editor
@@ -136,19 +79,3 @@ template.nvim was inspired by [nvim-plugin-template](https://github.com/ellisonl
 - [tdo.nvim](https://github.com/2KAbhishek/tdo.nvim) — Fast and simple notes in Neovim
 - [termim.nvim](https://github.com/2kabhishek/termim.nvim) — Neovim terminal improved
 - [octohub.nvim](https://github.com/2kabhishek/octohub.nvim) — Github repos in Neovim
-- [exercism.nvim](https://github.com/2kabhishek/exercism.nvim) — Exercism exercises in Neovim
-
-<hr>
-
-<div align="center">
-
-<strong>⭐ hit the star button if you found this useful ⭐</strong><br>
-
-<a href="https://github.com/2KAbhishek/template.nvim">Source</a>
-| <a href="https://2kabhishek.github.io/blog" target="_blank">Blog </a>
-| <a href="https://twitter.com/2kabhishek" target="_blank">Twitter </a>
-| <a href="https://linkedin.com/in/2kabhishek" target="_blank">LinkedIn </a>
-| <a href="https://2kabhishek.github.io/links" target="_blank">More Links </a>
-| <a href="https://2kabhishek.github.io/projects" target="_blank">Other Projects </a>
-
-</div>
